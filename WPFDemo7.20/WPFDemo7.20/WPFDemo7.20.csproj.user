@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <ApplicationDefinition Update="App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="View\CoursePageView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\FirstPageView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\MainWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="Assets\Styles\DefaultStyle.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\CoursePageView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\FirstPageView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\LoginView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,17 @@
+D:\Test\WPFDemo7.20\WPFDemoControls\bin\Debug\net6.0-windows\WPFDemoControls.deps.json
+D:\Test\WPFDemo7.20\WPFDemoControls\bin\Debug\net6.0-windows\WPFDemoControls.dll
+D:\Test\WPFDemo7.20\WPFDemoControls\bin\Debug\net6.0-windows\WPFDemoControls.pdb
+D:\Test\WPFDemo7.20\WPFDemoControls\obj\Debug\net6.0-windows\WPFDemoControls.csproj.AssemblyReference.cache
+D:\Test\WPFDemo7.20\WPFDemoControls\obj\Debug\net6.0-windows\Instrument.g.cs
+D:\Test\WPFDemo7.20\WPFDemoControls\obj\Debug\net6.0-windows\WPFDemoControls_MarkupCompile.cache
+D:\Test\WPFDemo7.20\WPFDemoControls\obj\Debug\net6.0-windows\WPFDemoControls_MarkupCompile.lref
+D:\Test\WPFDemo7.20\WPFDemoControls\obj\Debug\net6.0-windows\Instrument.baml
+D:\Test\WPFDemo7.20\WPFDemoControls\obj\Debug\net6.0-windows\WPFDemoControls.g.resources
+D:\Test\WPFDemo7.20\WPFDemoControls\obj\Debug\net6.0-windows\WPFDemoControls.GeneratedMSBuildEditorConfig.editorconfig
+D:\Test\WPFDemo7.20\WPFDemoControls\obj\Debug\net6.0-windows\WPFDemoControls.AssemblyInfoInputs.cache
+D:\Test\WPFDemo7.20\WPFDemoControls\obj\Debug\net6.0-windows\WPFDemoControls.AssemblyInfo.cs
+D:\Test\WPFDemo7.20\WPFDemoControls\obj\Debug\net6.0-windows\WPFDemoControls.csproj.CoreCompileInputs.cache
+D:\Test\WPFDemo7.20\WPFDemoControls\obj\Debug\net6.0-windows\WPFDemoControls.dll
+D:\Test\WPFDemo7.20\WPFDemoControls\obj\Debug\net6.0-windows\refint\WPFDemoControls.dll
+D:\Test\WPFDemo7.20\WPFDemoControls\obj\Debug\net6.0-windows\WPFDemoControls.pdb
+D:\Test\WPFDemo7.20\WPFDemoControls\obj\Debug\net6.0-windows\ref\WPFDemoControls.dll

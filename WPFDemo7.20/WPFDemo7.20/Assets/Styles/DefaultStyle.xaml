@@ -1,0 +1,44 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <!--Style作用：
+                 a.样式设置，用来为一组相同控件设置统一的样式
+                 b.只能改变控件的已有属性值（比如颜色字体）
+                 setter	设置器，设置样式、属性、触发器等的属性
+        模板作用：
+                 ControlTemplate	  控件模板设置，用来为一组相同控件设置统一的外形	Trigger // Visual Tree
+                 ItemPanelTemplate 数据模板 对应控件的ItemTemplate属性
+                 DataTemplate	  面板模板  对应控件的ItemsPanel属性
+    
+       x:key和x:name的区别
+                 前者是为xaml中定义的资源文件提供唯一的标识
+                 后者是为xaml中定义的控件元素提供唯一标识。
+       x:name和name的区别
+                x:Name: 
+             1.  唯一地标识 XAML 定义的对象，以便于从代码隐藏或通用代码中访问对象图中实例化的对象
+             2.  x:Name一旦应用于支持编程模型，便可被视为与由构造函数返回的用于保存对象引用或实例的变量等效。
+             3.  我们在xaml中有时能使用的Name，其实是被映射到x:Name上的
+             4.  所有的Type在xaml中都能使用x:Name,即使这个type 没有定义一个叫着Name的Property。因为xmal会在后台为其分配一个field来存储，以便在Binding等里面使用。
+             5.  像FrameworkElement, VisualStateGroup的某些type，我们在xaml中可以使用Name来代替x:Name，因为它们定义了Name Property，但是最关键的是在type上声明了一个Attribute，[RuntimeNameProperty(“Name”)]，正是这个attribute把Name映射到了x:Name上，所以让Name可以做到x:Name的功能。
+-->
+        <ControlTemplate TargetType="Button" x:Key="WindowControlButtonTemplate">
+        <Border Background="Transparent" Name="back">
+            <!--FindAncestor:寻找他的父类元素-->
+                <TextBlock Text="{Binding Content,RelativeSource={RelativeSource AncestorType=Button,Mode=FindAncestor}}" VerticalAlignment="Center" HorizontalAlignment="Center" FontFamily="../Fonts/#iconfont" FontSize="16"/>
+        </Border>
+        <ControlTemplate.Triggers>
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter TargetName="back" Property="Background" Value="#22FFFFFF"/>
+            </Trigger>
+            <Trigger Property="IsPressed" Value="True">
+                <Setter TargetName="back" Property="Background" Value="#44FFFFFF"/>
+            </Trigger>
+        </ControlTemplate.Triggers>
+    </ControlTemplate>
+    <Style TargetType="Button" x:Key="WindowControlButtonstyle">
+        <Setter Property="Width" Value="40"/>
+        <Setter Property="Height" Value="30"/>
+        <Setter Property="Foreground" Value="white"/>
+        <Setter Property="Template" Value="{StaticResource ResourceKey=WindowControlButtonTemplate}"/>
+    </Style>
+</ResourceDictionary> 
+    
